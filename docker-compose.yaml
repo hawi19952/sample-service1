@@ -1,0 +1,16 @@
+version: '3'
+services:
+  hello-gameel:
+    image: hawi1995/hello-gameel
+    ports: 
+      -4001:3000
+    environment:
+      - PORT=3000
+      - ENV=DOCKER
+  hello-mom:
+    image: hawi1995/hello-mom
+    ports:
+      -4002:3000
+    environment:
+      - PORT=3000
+      - ENV=DOCKER
