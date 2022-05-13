@@ -9,10 +9,10 @@ jobs:
   build_ts:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Repository & Node Setup 
-        uses: actions/checkout@v3
-        uses: actions/setup-node@v3
-          with: 
-          node-version: 14
-      - run: npm ci
-      - run: npm run build
+    - uses: actions/checkout@v3
+    - uses: actions/setup-node@v3
+      with: 
+        node-version: 14
+        cache: 'npm'
+    - run: npm ci
+    - run: npm build
