@@ -10,6 +10,6 @@ jobs:
       steps:
       - uses: actions/checkout@v2
       - name: docker build
-      - run: |
+      - run: 
           docker build . -t hawi1995/hello-gameel:1.0.0
 
