@@ -9,5 +9,5 @@ app.listen(port, () => {
 })
 
 app.use('/', (req, res) => {
-    res.send('And now we are sending this message with an up-to-date server with https!!')
+    res.send('Aaaand this is an update!!')
 })
