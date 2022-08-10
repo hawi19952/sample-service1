@@ -9,5 +9,5 @@ app.listen(port, () => {
 })
 
 app.use('/', (req, res) => {
-    res.send('Aaaand this is an update!!')
+    res.send('Aaaand this is another update!!')
 })
